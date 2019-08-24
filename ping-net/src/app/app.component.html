@@ -4,7 +4,12 @@
     Welcome to {{ title }}!
   </h1>  
 </div>
-<h2>Pages: </h2>
-<button routerLink="/riddlegenerator">Riddle Generator</button>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="/pingnet/riddlegenerator"><i class="fa fa-fw fa-search"></i> Riddle Generator</a>
+  <a href="/pingnet/eightball"><i class="fa fa-fw fa-search"></i> 8Ball</a>
+</div>
 <router-outlet></router-outlet>
